@@ -1,3 +1,6 @@
-import connectToDatabase from "./utils/database.js"; 
+import * as database from "./utils/database.js";
+// const database = require("./utils/database")
 
-connectToDatabase("My-database")
+database.connectToDatabase("My-database")
+
+database.disconnectDatabase()
