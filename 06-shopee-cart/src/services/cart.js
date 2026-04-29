@@ -17,7 +17,10 @@ async function deleteItem(userCart, {name}) {
 }
 
 async function removeItem(userCart, index) {
-    
+
+    if(index >= 0 && index < userCart.length) {
+        userCart.splice(index, 1)
+    }
 }
 
 async function displayCart(userCart) {
