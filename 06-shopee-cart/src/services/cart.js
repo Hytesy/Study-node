@@ -16,10 +16,24 @@ async function deleteItem(userCart, {name}) {
     }
 }
 
-async function removeItem(userCart, index) {
+async function removeItem(userCart, item) {
 
-    if(index >= 0 && index < userCart.length) {
-        userCart.splice(index, 1)
+    const indexFound = userCart.findIndex((p) => p.name === item.name)
+
+    if (indexFound == -1){
+        console.log("Item não encontrado");
+        return;   
+    }
+
+    if(userCart[indexFound].quantity > 1) {
+        userCart[indexFound].quantity -= 1
+
+        return
+    }
+
+    if(userCart[indexFound].quantity == 1) {
+        userCart.splice(indexFound, 1)
+        return
     }
 }
 
