@@ -12,6 +12,10 @@ const item2 = await createItem("Hotwheels lamborhuini", 39.99, 3)
 await cartService.addItem(myCart, item1)
 await cartService.addItem(myCart, item2)
 
-console.log("Cart Totoal is:");
+await cartService.displayCart(myCart)
+
+// await cartService.deleteItem(myCart, item1)
+
+console.log("Cart Total is:");
 
 await cartService.calculateTotal(myCart)
