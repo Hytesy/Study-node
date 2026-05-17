@@ -1,0 +1,13 @@
+{
+  "name": "10-qrcode",
+  "version": "1.0.0",
+  "description": "Kit de utilidade para e-commerces",
+  "main": "index.js",
+  "scripts": {
+    "start": "node/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
