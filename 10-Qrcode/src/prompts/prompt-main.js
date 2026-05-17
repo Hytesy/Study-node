@@ -1,4 +1,4 @@
-const mainPrompt = [
+export const mainPrompt = [
     {
         name: "select",
         description: "Escolha a ferramente (1 - QRCODE ou 2- PASSWORD)",
